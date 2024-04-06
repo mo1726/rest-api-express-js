@@ -17,7 +17,12 @@ app.put("/put",(req , res) => {
     res.send("DATA UPdate Request Recieved");
 })
 
-
+// post 
+app.post("/POST",(req , res) => {
+    console.log("POST REQUEST SUCCESSFUL");
+    console.log(req.body);
+    res.send("DATA POST Request Recieved");
+})
 
 app.listen(port,()=>{
     console.log(`Server established at ${port}`);
