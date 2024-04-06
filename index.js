@@ -24,6 +24,12 @@ app.post("/POST",(req , res) => {
     res.send("DATA POST Request Recieved");
 })
 
+//delete
+app.delete("/Delete",(req , res) => {
+    console.log("Delete REQUEST SUCCESSFUL");
+    console.log(req.body);
+    res.send("DATA Delete Request Recieved");
+})
 app.listen(port,()=>{
     console.log(`Server established at ${port}`);
 })
